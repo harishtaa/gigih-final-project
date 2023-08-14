@@ -22,7 +22,7 @@ route.get('/:productId', async (req, res) =>{
     }
 })
 
-route.get('/:videoId', async (req, res) =>{
+route.get('/video/:videoId', async (req, res) =>{
     const videoId = req.params.videoId
     try{
         const results  = await Product.find({videoId:videoId})
