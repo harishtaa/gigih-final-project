@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 # Toko Play - Getting Started
 ## Prerequisites
@@ -6,7 +5,6 @@ Before you begin, ensure you have the following installed:
 - [Node.js](https://nodejs.org/) (v14 or higher)
 -  [npm](https://www.npmjs.com/get-npm) (usually comes with Node.js)
 -  [MongoDB](https://www.mongodb.com/try/download/community) (installed and running)
-- 
 
 ##  Getting Started
 Follow these steps to set up and run the project locally:
