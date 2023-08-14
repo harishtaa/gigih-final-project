@@ -1,6 +1,6 @@
 
 import { Card, Form, Button} from 'react-bootstrap';
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect,useRef } from 'react'
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
@@ -23,8 +23,18 @@ const CommentSection = () => {
         return new Date(newDate.getTime() + 7 * 60 * 60 * 1000).toUTCString();
     }
 
+    const scrollComment = () => {
+        const scrollContainer = commentSectionRef.current;
+            const isScrolledToBottom = scrollContainer.scrollHeight - scrollContainer.scrollTop === scrollContainer.clientHeight;
+            if (!isScrolledToBottom) {
+                scrollContainer.scrollTop = scrollContainer.scrollHeight - scrollContainer.clientHeight;
+            }
+            commentSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+
     const [username, setUsername] = useState("")
     const [comment, setComment] = useState("")
+    const commentSectionRef = useRef(null);
 
     const saveComment = async(e) => {
         e.preventDefault();
@@ -34,17 +44,22 @@ const CommentSection = () => {
                 username,
                 comment
             });
-            setUsername(""); // Clear the username state
-            setComment("");
             getCommentsById();
+            setUsername("");
+            setComment("");
+            scrollComment()
+            
         } catch (e) {
             console.log('Error response:', e.response);
         }
     }
 
     return(
-        <>
+        <>  
+            <h4>Comments</h4>
+            <div style={{ height: '60vh', overflow: 'auto' }}>
             {
+                
                 comments.map((c,i) => 
                     
                     <div className='mt-2' key={i}>
@@ -57,11 +72,16 @@ const CommentSection = () => {
                                 <p style={{marginLeft:'10px'}}>{c.comment}</p>
                             </div>
                         </Card>
+                        <div ref={commentSectionRef}></div>
                     </div>
+                    
                 )
+                
             }
+            
+            </div>
 
-            <div style={{height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
+            <div style={{height: '40vh', marginTop:'30px'}}>
                     <Form style={{ marginTop: 'auto', alignItems: 'end' }} onSubmit={saveComment}>
                     <Form.Group className="mb-1" controlId="formBasicEmail">
                         <Form.Label>Username</Form.Label>

@@ -6,7 +6,6 @@ import { useParams } from 'react-router-dom';
 const VideoEmbed = () => {
 
     const {id} = useParams()
-    const [video, setVideo] = useState([])
     const [embed, setEmbed] = useState('');
     useEffect(() => {
         getVideoById()
@@ -18,7 +17,6 @@ const VideoEmbed = () => {
         const data = await fetch(`http://localhost:5000/videos/${id}`)
         if (!data.ok) throw new Error ("Gagal Fetch")
         let results = await data.json()
-        setVideo(results[0])
 
         const ytUrl = results.videoUrl;
         const urlId = ytUrl.slice(17)

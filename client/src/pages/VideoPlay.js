@@ -3,6 +3,7 @@ import { Row, Col, Container} from 'react-bootstrap';
 import VideoEmbed from '../components/VideoEmbed';
 import React from 'react'
 import CommentSection from '../components/CommentSection';
+import ProductEtalase from '../components/ProductsEtalase';
 
 
 const VideoPlay = () => {
@@ -14,20 +15,21 @@ const VideoPlay = () => {
             </div>
             <div>
                 <Row>
-                    <Col xs={3} style={{backgroundColor:'tomato'}}>
-
+                    <Col lg={3} md={2} style={{backgroundColor:'#dcdcdc '}}>
+                        <Row  xs= {3} md={2} lg={2} >
+                            <ProductEtalase />
+                        </Row>
                     </Col>
 
-                    <Col xs={6} style={{backgroundColor:'aqua'}}>
+                    <Col lg={6} md={1} style={{backgroundColor:'#ffffff'}}>
                         <VideoEmbed/>
                     </Col>
 
-                    <Col xs={3} style={{backgroundColor:'tomato'}}>
+                    <Col lg={3} md={1} style={{backgroundColor:'#dcdcdc ', alignContent:'center'}}>
                         <CommentSection/>
                     </Col>
                 </Row>
             </div>
-        
         </Container>
         
     )
