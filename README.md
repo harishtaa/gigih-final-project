@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Toko Play - Getting Started
 ## Prerequisites
@@ -68,4 +69,3 @@ const  db  =  mongoose.connection;
 5.  **Access the App:**
     
     Open your browser and navigate to `http://localhost:3000` to see the running application.
-
