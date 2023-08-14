@@ -48,7 +48,7 @@ export function ProductsCards() {
                             <Col key={product.productId} className="mb-2">
                                 <Card className ="m-1 p-1 bg-light border-3" style={{ textAlign:'center',height:'100%'}}>
                                     <Card.Img variant="top" src={product.thumbnailUrl} />
-                                    <Card.Body style={{height:'50px'}}>
+                                    <Card.Body style={{height:'70px'}}>
                                         <Card.Title style={{fontSize:'10px'}}> {product.title}</Card.Title>
                                         <Card.Title style={{fontSize:'10px'}}> Rp{product.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')}</Card.Title>
                                     </Card.Body>

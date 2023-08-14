@@ -78,7 +78,7 @@ function FormEditProduct() {
     return (
         <Container className='p-5'>
             <div className=' mb-3 text-center justify-content-center'>
-                <h3>Insert Product</h3>
+                <h3>Edit Product</h3>
             </div>
             <div>
                 <Form className='p-4' onSubmit={updateProduct}>
@@ -149,7 +149,7 @@ function FormEditProduct() {
                     </Form.Group>
 
                     <Button variant='primary' type='submit'>
-                        Insert
+                        Update
                     </Button>
                 </Form>
             </div>
