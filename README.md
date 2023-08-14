@@ -69,3 +69,53 @@ const  db  =  mongoose.connection;
 5.  **Access the App:**
     
     Open your browser and navigate to `http://localhost:3000` to see the running application.
+
+## Database Scheme
+
+## Collections
+
+### Videos Collection
+
+- `videoId` (Number): Unique identifier for the video.
+- `judulVideo` (String): Title of the video.
+- `thumbnailUrl` (String): URL to the video thumbnail.
+- `videoUrl` (String): URL to the video content.
+
+### Products Collection
+
+- `videoId` (Number): Reference to the video that the product is associated with.
+- `productId` (Number): Unique identifier for the product.
+- `productUrl` (String): URL to the product page.
+- `thumbnailUrl` (String): URL to the product thumbnail.
+- `title` (String): Title of the product.
+- `price` (String): Price of the product.
+### Comments Collection
+
+- `videoId` (Number): Reference to the video that the comment is associated with.
+- `commentId` (Number): Unique identifier for the comment.
+- `username` (String): Username of the commenter.
+- `comment` (String): Content of the comment.
+- `timestamp` (Date): Timestamp of when the comment was posted.
+## API Structure
+
+### Videos
+
+- `POST /videos`: Add a new video to the database.
+- `GET /videos`: Fetch a list of all videos available on the platform.
+- `GET /videos/:id`: Fetch details of a specific video using its ID.
+- `PATCH /videos/:id`: Edit a video inside the database.
+- `DELETE /videos/:id`: Delete a video from the database.
+
+### Products
+
+- `POST /products`: Add a new product to the database.
+- `GET /products/:id`: Fetch details of a specific product using its ID.
+- `GET /products/video/:videoId`: Fetch all products filtered by videoId
+- `POST /products`: Add a new product to the database.
+- `PATCH /products/:id`: Edit a product inside the database.
+- `DELETE /products/:id`: Delete a product from the database.
+### Comments
+
+- `POST /comments`: Add a new comment to a specific video.
+- `GET /comments/:videoId`: Fetch all comments for a specific video using its ID
+

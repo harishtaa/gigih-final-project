@@ -4,18 +4,23 @@
 ### Videos
 
 - `POST /videos`: Add a new video to the database.
-- `GET /videos`: Retrieve a list of all videos available on the platform.
+- `GET /videos`: Fetch a list of all videos available on the platform.
 - `GET /videos/:id`: Fetch details of a specific video using its ID.
+- `PATCH /videos/:id`: Edit a video inside the database.
+- `DELETE /videos/:id`: Delete a video from the database.
 
 ### Products
 
 - `POST /products`: Add a new product to the database.
 - `GET /products/:id`: Fetch details of a specific product using its ID.
+- `GET /products/video/:videoId`: Fetch all products filtered by videoId
+- `POST /products`: Add a new product to the database.
+- `PATCH /products/:id`: Edit a product inside the database.
+- `DELETE /products/:id`: Delete a product from the database.
 ### Comments
 
 - `POST /comments`: Add a new comment to a specific video.
 - `GET /comments/:videoId`: Fetch all comments for a specific video using its ID
-
 
 ## How to Run :rocket:
 ### Prerequisites
