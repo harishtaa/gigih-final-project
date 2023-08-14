@@ -37,9 +37,11 @@ Follow these steps to set up and run the project locally:
     -   Open a new terminal window and navigate to the root directory of the project.
     -  Navigate to the `data` folder: `cd data `
     -   Import sample data into MongoDB:
-     ```mongoimport --db toko-play --collection comments --file comments.json
+     ```
+     mongoimport --db toko-play --collection comments --file comments.json
      mongoimport --db toko-play --collection products --file products.json
-     mongoimport --db toko-play --collection videos --file videos.json```
+     mongoimport --db toko-play --collection videos --file videos.json
+     ```
 
 2.  **Environment Variables:**
     Open the project in your text editor and open the `.env`and `index.js`, ensure that the MongoDB connection string is correctly set according to your MongoDB setup. For example:
