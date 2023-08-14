@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "64d1eb1d6172cceaa63ffe43"
+  },
+  "videoId": 1,
+  "judulVideo": "Pendakian 3 Gunung Terakhir dalam \"Pendakian 9 Gunung di Wonosobo\"",
+  "thumbnailUrl": "https://i.ytimg.com/vi/qV-py8T6ALI/maxresdefault.jpg",
+  "videoUrl": "https://youtu.be/qV-py8T6ALI"
+},
+{
+  "_id": {
+    "$oid": "64d1ec3f6172cceaa63ffe5b"
+  },
+  "videoId": 2,
+  "judulVideo": "Puncak kecanggihan tablet Rp22.000.000!!! 🤯",
+  "thumbnailUrl": "https://i.ytimg.com/vi/q32mn4ls6Co/maxresdefault.jpg",
+  "videoUrl": "https://youtu.be/q32mn4ls6Co"
+},
+{
+  "_id": {
+    "$oid": "64d1f1bd6172cceaa63ffe8f"
+  },
+  "videoId": 3,
+  "judulVideo": "Belajar Kenapa Parfum Lokal ini BOOM di Marketplace (HMNS)",
+  "thumbnailUrl": "https://i.ytimg.com/vi/cG3W-_eqI4M/maxresdefault.jpg",
+  "videoUrl": "https://youtu.be/cG3W-_eqI4M"
+},
+{
+  "_id": {
+    "$oid": "64da0427b736354ccbc3bfc3"
+  },
+  "videoId": 4,
+  "judulVideo": "12 Barang Murah & Manfaat Buat Programmer",
+  "thumbnailUrl": "https://i.ytimg.com/vi/mhPWVKXcY2Q/maxresdefault.jpg",
+  "videoUrl": "https://youtu.be/mhPWVKXcY2Q"
+},
+{
+  "_id": {
+    "$oid": "64da05fcb736354ccbc3bff8"
+  },
+  "videoId": 5,
+  "judulVideo": "Complete chicken noodle recipe",
+  "thumbnailUrl": "https://i.ytimg.com/vi/_L8pmcvQCto/maxresdefault.jpg",
+  "videoUrl": "https://youtu.be/_L8pmcvQCto"
+}]

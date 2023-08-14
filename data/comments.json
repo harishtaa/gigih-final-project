@@ -1,0 +1,66 @@
+[{
+  "_id": {
+    "$oid": "64d595f6c74c77a7e5ffcc1e"
+  },
+  "videoId": 1,
+  "username": "a",
+  "comment": "aa",
+  "timestamp": {
+    "$date": "2023-08-11T01:59:18.774Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64d595f8c74c77a7e5ffcc21"
+  },
+  "videoId": 1,
+  "username": "a",
+  "comment": "a",
+  "timestamp": {
+    "$date": "2023-08-11T01:59:20.895Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64d595fac74c77a7e5ffcc24"
+  },
+  "videoId": 1,
+  "username": "a",
+  "comment": "a",
+  "timestamp": {
+    "$date": "2023-08-11T01:59:22.815Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64d595fcc74c77a7e5ffcc27"
+  },
+  "videoId": 1,
+  "username": "a",
+  "comment": "a",
+  "timestamp": {
+    "$date": "2023-08-11T01:59:24.594Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64da0746b736354ccbc3c042"
+  },
+  "videoId": 3,
+  "username": "har",
+  "comment": "wow keren",
+  "timestamp": {
+    "$date": "2023-08-14T10:51:50.929Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64da0755b736354ccbc3c04d"
+  },
+  "videoId": 5,
+  "username": "test",
+  "comment": "mie ayam enak\n",
+  "timestamp": {
+    "$date": "2023-08-14T10:52:05.011Z"
+  }
+}]
